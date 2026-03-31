@@ -304,7 +304,31 @@
       line-height: 1.7;
     }
 
-    /* ── Who it's for ── */
+    /* ── Who it's for (dark top) ── */
+    .pp-who-dark {
+      padding: 100px 0 80px;
+      padding-top: 140px;
+      background: var(--charcoal);
+    }
+    .pp-who-card-dark {
+      background: rgba(255,255,255,.05) !important;
+      border-color: rgba(255,255,255,.1) !important;
+    }
+    .pp-who-card-dark:hover {
+      background: rgba(255,255,255,.08) !important;
+      border-color: var(--teal-mid) !important;
+    }
+    .pp-who-card-dark h3 { color: var(--white) !important; }
+    .pp-who-card-dark p { color: rgba(255,255,255,.55) !important; }
+    /* ── Hero white variant ── */
+    .pp-hero-white {
+      background: var(--white);
+      min-height: auto;
+      padding: 80px 0 100px;
+    }
+    .pp-hero-white::before,
+    .pp-hero-white::after,
+    .pp-hero-white .pp-hero-grid { display: none; }
     #pp-who {
       padding: 100px 0;
       background: var(--white);
@@ -874,99 +898,98 @@
 </header>
 
 
-<!-- HERO -->
-<section class="pp-hero">
-  <div class="pp-hero-grid"></div>
+<!-- WHO IT'S FOR (dark, top) -->
+<section id="pp-who" class="pp-who-dark">
   <div class="container">
-    <div class="pp-hero-inner">
-      <div class="pp-hero-content">
-        <div class="pp-hero-eyebrow">Preferred Partner Program</div>
-        <h1 class="pp-hero-title">
-          Dedicated Cleaning for<br />
-          <em>Serious Property Owners</em>
-        </h1>
-        <p class="pp-hero-sub">
-          Built for property managers, real estate agents, contractors, and landlords who need a reliable cleaning partner — not a one-time vendor. Exclusive rates, priority access, and a team that knows your properties.
-        </p>
-        <div class="pp-hero-actions">
-          <a href="#pp-apply" class="btn-pp-primary">Apply for Partnership</a>
-          <a href="#pp-benefits" class="btn-pp-ghost">See What's Included</a>
-        </div>
+    <div class="pp-who-header">
+      <span class="section-label" style="color:var(--teal-mid);">Who It's For</span>
+      <h2 class="section-title" style="color:var(--white);">Built for Property Professionals</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.6);">If cleaning is part of how you do business, this program was designed around your needs.</p>
+    </div>
+    <div class="pp-who-grid">
+      <div class="pp-who-card pp-who-card-dark" data-anim data-delay="1">
+        <div class="pp-who-icon">🏢</div>
+        <h3>Property Managers</h3>
+        <p>Turn-ready cleans between tenants, recurring service across your portfolio, and one point of contact for everything.</p>
       </div>
-
-      <div class="pp-hero-card">
-        <div class="pp-hero-card-label">Program Highlights</div>
-        <div class="pp-hero-stat-list">
-          <div class="pp-hero-stat">
-            <div class="pp-hero-stat-icon">🏘️</div>
-            <div>
-              <strong>Multi-Property Pricing</strong>
-              <span>Volume rates across all your units and listings</span>
-            </div>
-          </div>
-          <div class="pp-hero-stat">
-            <div class="pp-hero-stat-icon">⚡</div>
-            <div>
-              <strong>Priority Scheduling</strong>
-              <span>Your jobs don't get bumped — ever</span>
-            </div>
-          </div>
-          <div class="pp-hero-stat">
-            <div class="pp-hero-stat-icon">🤝</div>
-            <div>
-              <strong>Dedicated Point of Contact</strong>
-              <span>One person handles all your accounts</span>
-            </div>
-          </div>
-          <div class="pp-hero-stat">
-            <div class="pp-hero-stat-icon">📋</div>
-            <div>
-              <strong>Flexible Billing &amp; Reporting</strong>
-              <span>Consolidated invoicing, job notes, and photo reports</span>
-            </div>
-          </div>
-          <div class="pp-hero-stat">
-            <div class="pp-hero-stat-icon">🏠</div>
-            <div>
-              <strong>40–60% Off Your Own Home Cleaning</strong>
-              <span>All contract signees receive this perk for the life of the agreement</span>
-            </div>
-          </div>
-        </div>
+      <div class="pp-who-card pp-who-card-dark" data-anim data-delay="2">
+        <div class="pp-who-icon">🏡</div>
+        <h3>Real Estate Agents</h3>
+        <p>Pre-listing deep cleans, move-out details, and same-week turnarounds. We help your listings show their best.</p>
+      </div>
+      <div class="pp-who-card pp-who-card-dark" data-anim data-delay="3">
+        <div class="pp-who-icon">🏗️</div>
+        <h3>Contractors &amp; Builders</h3>
+        <p>We're built from the same world. Post-construction cleanup without damaging what you just finished — every time.</p>
+      </div>
+      <div class="pp-who-card pp-who-card-dark" data-anim data-delay="4">
+        <div class="pp-who-icon">🔑</div>
+        <h3>Landlords &amp; Investors</h3>
+        <p>Multiple units, consistent quality, consolidated billing. We make your rental operations easier to run.</p>
       </div>
     </div>
   </div>
 </section>
 
 
-<!-- WHO IT'S FOR -->
-<section id="pp-who">
+<!-- HERO (white) -->
+<section class="pp-hero pp-hero-white">
   <div class="container">
-    <div class="pp-who-header">
-      <span class="section-label">Who It's For</span>
-      <h2 class="section-title">Built for Property Professionals</h2>
-      <p class="section-sub">If cleaning is part of how you do business, this program was designed around your needs.</p>
-    </div>
-    <div class="pp-who-grid">
-      <div class="pp-who-card" data-anim data-delay="1">
-        <div class="pp-who-icon">🏢</div>
-        <h3>Property Managers</h3>
-        <p>Turn-ready cleans between tenants, recurring service across your portfolio, and one point of contact for everything.</p>
+    <div class="pp-hero-inner">
+      <div class="pp-hero-content">
+        <div class="pp-hero-eyebrow" style="color:var(--teal);">Preferred Partner Program</div>
+        <h1 class="pp-hero-title" style="color:var(--teal-dark);">
+          Dedicated Cleaning for<br />
+          <em>Serious Property Owners</em>
+        </h1>
+        <p class="pp-hero-sub" style="color:var(--gray-500);">
+          Built for property managers, real estate agents, contractors, and landlords who need a reliable cleaning partner — not a one-time vendor. Exclusive rates, priority access, and a team that knows your properties.
+        </p>
+        <div class="pp-hero-actions">
+          <a href="#pp-apply" class="btn-pp-primary">Apply for Partnership</a>
+          <a href="#pp-benefits" class="btn-pp-ghost" style="color:var(--teal); border-color:var(--teal);">See What's Included</a>
+        </div>
       </div>
-      <div class="pp-who-card" data-anim data-delay="2">
-        <div class="pp-who-icon">🏡</div>
-        <h3>Real Estate Agents</h3>
-        <p>Pre-listing deep cleans, move-out details, and same-week turnarounds. We help your listings show their best.</p>
-      </div>
-      <div class="pp-who-card" data-anim data-delay="3">
-        <div class="pp-who-icon">🏗️</div>
-        <h3>Contractors &amp; Builders</h3>
-        <p>We're built from the same world. Post-construction cleanup without damaging what you just finished — every time.</p>
-      </div>
-      <div class="pp-who-card" data-anim data-delay="4">
-        <div class="pp-who-icon">🔑</div>
-        <h3>Landlords &amp; Investors</h3>
-        <p>Multiple units, consistent quality, consolidated billing. We make your rental operations easier to run.</p>
+
+      <div class="pp-hero-card" style="background:var(--gray-50); border-color:var(--gray-200);">
+        <div class="pp-hero-card-label" style="color:var(--teal);">Program Highlights</div>
+        <div class="pp-hero-stat-list">
+          <div class="pp-hero-stat" style="border-color:var(--gray-100);">
+            <div class="pp-hero-stat-icon">🏘️</div>
+            <div>
+              <strong style="color:var(--teal-dark);">Multi-Property Pricing</strong>
+              <span style="color:var(--gray-500);">Volume rates across all your units and listings</span>
+            </div>
+          </div>
+          <div class="pp-hero-stat" style="border-color:var(--gray-100);">
+            <div class="pp-hero-stat-icon">⚡</div>
+            <div>
+              <strong style="color:var(--teal-dark);">Priority Scheduling</strong>
+              <span style="color:var(--gray-500);">Your jobs don't get bumped — ever</span>
+            </div>
+          </div>
+          <div class="pp-hero-stat" style="border-color:var(--gray-100);">
+            <div class="pp-hero-stat-icon">🤝</div>
+            <div>
+              <strong style="color:var(--teal-dark);">Dedicated Point of Contact</strong>
+              <span style="color:var(--gray-500);">One person handles all your accounts</span>
+            </div>
+          </div>
+          <div class="pp-hero-stat" style="border-color:var(--gray-100);">
+            <div class="pp-hero-stat-icon">📋</div>
+            <div>
+              <strong style="color:var(--teal-dark);">Flexible Billing &amp; Reporting</strong>
+              <span style="color:var(--gray-500);">Consolidated invoicing, job notes, and photo reports</span>
+            </div>
+          </div>
+          <div class="pp-hero-stat" style="border-color:var(--gray-100);">
+            <div class="pp-hero-stat-icon">🏠</div>
+            <div>
+              <strong style="color:var(--teal-dark);">40–60% Off Your Own Home Cleaning</strong>
+              <span style="color:var(--gray-500);">All contract signees receive this perk for the life of the agreement</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

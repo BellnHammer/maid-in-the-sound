@@ -379,6 +379,22 @@
       padding: 36px;
       box-shadow: var(--shadow-lg);
     }
+    .hero-pro-btn {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--teal);
+      border: 1.5px solid var(--teal);
+      border-radius: 6px;
+      padding: 6px 14px;
+      margin-bottom: 14px;
+      text-decoration: none;
+      transition: background .2s, color .2s;
+    }
+    .hero-pro-btn:hover {
+      background: var(--teal);
+      color: var(--white);
+    }
     .hero-card-title {
       font-weight: 700;
       font-size: 18px;
@@ -1251,6 +1267,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
+        <li><a href="preferred-partner.html" style="color:var(--teal); font-weight:600;">For Professionals</a></li>
         <li><a href="#booking" class="nav-cta btn">Book Now</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="Open menu" onclick="toggleNav()" aria-expanded="false" id="hamburger">
@@ -1262,6 +1279,7 @@
     <a href="#about" onclick="closeNav()">About</a>
     <a href="#services" onclick="closeNav()">Services</a>
     <a href="#pricing" onclick="closeNav()">Pricing</a>
+    <a href="preferred-partner.html" onclick="closeNav()" style="color:var(--teal); font-weight:600;">For Professionals</a>
     <a href="#contact" onclick="closeNav()">Contact</a>
     <a href="#booking" class="nav-cta" onclick="closeNav()">Book Now</a>
   </div>
@@ -1313,6 +1331,7 @@
 
       <!-- Hero card (hidden mobile) -->
       <div class="hero-card" aria-hidden="true">
+        <a href="preferred-partner.html" class="hero-pro-btn">For Professionals &rarr;</a>
         <div class="hero-card-title">Why Clients Love Us</div>
         <div class="hero-card-sub">Real results, every visit.</div>
         <div class="hero-card-list">
@@ -1419,6 +1438,11 @@
         </p>
         <div class="about-highlights">
           <div class="about-highlight">
+            <div class="about-highlight-icon">🤝</div>
+            <strong>Relationship Focused</strong>
+            <p>Our recurring clients get consistency — the same people, the same high standards, every visit.</p>
+          </div>
+          <div class="about-highlight">
             <div class="about-highlight-icon">🏗️</div>
             <strong>Contractor Expertise</strong>
             <p>We know fresh finishes — paint, trim, flooring, fixtures — and how to clean without causing damage.</p>
@@ -1427,11 +1451,6 @@
             <div class="about-highlight-icon">📍</div>
             <strong>Truly Local</strong>
             <p>We live and work in Kitsap County. Not a franchise, not a national chain — your neighbors.</p>
-          </div>
-          <div class="about-highlight">
-            <div class="about-highlight-icon">🤝</div>
-            <strong>Relationship Focused</strong>
-            <p>Our recurring clients get consistency — the same people, the same high standards, every visit.</p>
           </div>
           <div class="about-highlight">
             <div class="about-highlight-icon">⭐</div>
