@@ -194,6 +194,22 @@
       height: 48px;
       width: auto;
     }
+    .nav-pro-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--teal);
+      border: 1.5px solid var(--teal);
+      border-radius: 6px;
+      padding: 5px 12px;
+      text-decoration: none;
+      margin-left: 16px;
+      transition: background .2s, color .2s;
+      white-space: nowrap;
+    }
+    .nav-pro-link:hover {
+      background: var(--teal);
+      color: var(--white);
+    }
     .nav-links {
       display: flex;
       align-items: center;
@@ -1233,6 +1249,7 @@
 
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-pro-link { display: none; }
       .nav-hamburger { display: flex; }
       .hero-inner { padding: 60px 0 100px; }
       .hero-title { font-size: 2.2rem; }
@@ -1271,11 +1288,11 @@
           alt="Maid in the Sound logo"
         />
       </a>
+      <a href="preferred-partner.html" class="nav-pro-link">For Professionals</a>
       <ul class="nav-links" role="list">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
-        <li><a href="preferred-partner.html" style="color:var(--teal); font-weight:600;">For Professionals</a></li>
         <li><a href="#booking" class="nav-cta btn">Book Now</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="Open menu" onclick="toggleNav()" aria-expanded="false" id="hamburger">
